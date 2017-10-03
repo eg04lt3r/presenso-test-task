@@ -144,7 +144,7 @@ public class SquareMatrixMultiplier implements MatrixMultiplier {
             // can decrease this number to the length of the matrix
             final int parThreadsNum = batchSize < 1 ? a.length : nThreads;
 
-                return multiplyInParallel(a, b, Math.max(batchSize, 1), parThreadsNum);
+            return multiplyInParallel(a, b, Math.max(batchSize, 1), parThreadsNum);
         }
 
         @Override
